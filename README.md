@@ -1,5 +1,7 @@
 # Component Tree Webpack Plugin
 
+[![npm version](https://badge.fury.io/js/component-tree-webpack-plugin.svg)](https://badge.fury.io/js/component-tree-webpack-plugin)
+
 Generates a JSON file with a tree representation of all the module dependencies within a specified list of directories that match certain extensions. It's particularly useful to generate a hierarchy of React components.
 
 ## Installation
