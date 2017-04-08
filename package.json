@@ -1,5 +1,5 @@
 {
-  "name": "webpack-component-tree-plugin",
+  "name": "component-tree-webpack-plugin",
   "version": "1.0.0",
   "description": "A Webpack plugin for creating a simple component dependency tree",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eduardoboucas/webpack-component-tree-plugin.git"
+    "url": "git+https://github.com/eduardoboucas/component-tree-webpack-plugin.git"
   },
   "keywords": [
     "webpack",
@@ -19,7 +19,7 @@
   "author": "Eduardo Boucas <mail@eduardoboucas.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eduardoboucas/webpack-component-tree-plugin/issues"
+    "url": "https://github.com/eduardoboucas/component-tree-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/eduardoboucas/webpack-component-tree-plugin#readme"
+  "homepage": "https://github.com/eduardoboucas/component-tree-webpack-plugin#readme"
 }
