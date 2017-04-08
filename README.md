@@ -1,4 +1,4 @@
-# Component Tree plugin
+# Component Tree Webpack Plugin
 
 Generates a JSON file with a tree representation of all the module dependencies within a specified list of directories that match certain extensions. It's particularly useful to generate a hierarchy of React components.
 
