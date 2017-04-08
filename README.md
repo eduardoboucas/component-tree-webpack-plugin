@@ -42,6 +42,44 @@ In your webpack configuration file:
 - `extensions` (Array): A list of allowed extensions for components (default: `['.jsx']`)
 - `outputPath` (String): The full path to the generated JSON file
 
+## Examples
+
+When put together with a package like [archy](https://www.npmjs.com/package/archy), the generated map can be used to draw interesting visualisations of the component hierarchy.
+
+```
+App
+├─┬ Header
+│ ├─┬ CollectionNav
+│ │ └─┬ Nav
+│ │   ├── Dropdown
+│ │   ├── DropdownItem
+│ │   └── NavItem
+│ ├── IconBurger
+│ └── IconCross
+├─┬ Main
+│ ├── LoadingBar
+│ └─┬ NotificationCentre
+│   └── Notification
+└─┬ ProfileEditView
+  ├─┬ Header
+  │ ├─┬ CollectionNav
+  │ │ └─┬ Nav
+  │ │   ├── Dropdown
+  │ │   ├── DropdownItem
+  │ │   └── NavItem
+  │ ├── IconBurger
+  │ └── IconCross
+  ├─┬ Main
+  │ ├── LoadingBar
+  │ └─┬ NotificationCentre
+  │   └── Notification
+  ├── Page
+  └─┬ ProfileEdit
+    └── SubNavItem
+```
+
+This [example script](examples/archy.js) shows how the map can be transformed into the diagram above.
+
 ## License
 
 Copyright 2017 Eduardo Bouças
