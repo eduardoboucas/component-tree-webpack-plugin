@@ -1,7 +1,7 @@
 const path = require('path')
 
 function createTreeNode(dependencyMap, node) {
-  const children = dependencyMap[node].map(child => {
+  const children = (dependencyMap[node] || []).map(child => {
     return createTreeNode(dependencyMap, child)
   })
 
@@ -25,7 +25,7 @@ ComponentTreePlugin.prototype.apply = function (compiler) {
         chunk.modules.forEach(module => {
           if (!this.isComponent(module.resource)) return
 
-          const dependencies = module.dependencies.filter(dependency => {
+          const dependencies = (module.dependencies || []).filter(dependency => {
             return dependency.module &&
               dependency.module.resource &&
               this.isComponent(dependency.module.resource)

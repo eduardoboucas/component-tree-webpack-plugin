@@ -1,6 +1,6 @@
 {
   "name": "component-tree-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Webpack plugin for creating a simple component dependency tree",
   "main": "index.js",
   "scripts": {
